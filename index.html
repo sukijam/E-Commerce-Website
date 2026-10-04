@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZipZy</title>
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--======== 1. HEADER =============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+
+            <!-- Logo -->
+            <a href="index.html" class="nav__logo">
+                Zip<span>Zy</span>
+            </a>
+
+            <!-- Menu links -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link active-link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="shop.html" class="nav__link">Shop</a>
+                </li>
+                <li class="nav__item">
+                    <a href="about.html" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contact.html" class="nav__link">Contact</a>
+                </li>
+                </ul>
+
+                <button type="button" class="nav__close" id="nav-close" aria-label="Close menu">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+
+            <!-- Cart, login and menu button -->
+            <div class="nav__actions">
+                <a href="shop.html#cart" class="nav__cart" id="nav-cart" aria-label="Cart, 0 items">
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <span class="nav__cart-count" id="cart-count" data-count="0" aria-live="polite">0</span>
+                </a>
+
+                <a href="login.html" class="nav__login" aria-label="Login">
+                    <i class="ri-user-line"></i>
+                </a>
+
+                <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--======== MAIN =============-->
+    <main class="main">
+
+        <!-- 2.1 Home / hero -->
+        <section class="home">
+            <div class="home__container">
+
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Enjoy
+                        <span>ZIPZY</span>
+                        Everyday!
+                    </h1>
+                    <p class="home__description">
+                        Refreshing fruity flavors in every can, <br>
+                        perfect for brightening your day.
+                    </p>
+                    <a href="shop.html" class="home__button">Buy Now</a>
+                </div>
+
+                <div class="home__images">
+                    <div class="home__juice-animate">
+                        <div class="home__cans">
+                            <img src="assets/img/Can Calamansi.png" alt="Zipzy Calamansi can" class="home__can home__can--left">
+                            <img src="assets/img/Can Mango.png" alt="Zipzy Mango can" class="home__can home__can--right">
+                            <img src="assets/img/Can Strawberry.png" alt="Zipzy Strawberry can" class="home__can home__can--front">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Find your flavor -->
+        <section class="flavor">
+            <div class="flavor__container container">
+                <h2 class="flavor__title">Find Your <span>Flavor</span></h2>
+                <p class="flavor__subtitle">ZipZy comes in a variety of refreshing flavors made with real juice and natural ingredients.</p>
+
+                <div class="flavor__carousel">
+                    <button type="button" class="flavor__arrow" id="flavor-prev" aria-label="Previous flavor">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </button>
+
+                    <div class="flavor__track" id="flavor-track">
+                        <a href="shop.html" class="flavor__slide" aria-label="Shop Calamansi">
+                            <img src="assets/Can Model 250ml/Calamansi 250ml.png" alt="Calamansi">
+                            <p class="flavor__name">Calamansi</p>
+                        </a>
+                        <a href="shop.html" class="flavor__slide" aria-label="Shop Strawberry">
+                            <img src="assets/Can Model 250ml/Strawberry 250ml.png" alt="Strawberry">
+                            <p class="flavor__name">Strawberry</p>
+                        </a>
+                        <a href="shop.html" class="flavor__slide" aria-label="Shop Mango">
+                            <img src="assets/Can Model 250ml/Mango 250ml.png" alt="Mango">
+                            <p class="flavor__name">Mango</p>
+                        </a>
+                        <a href="shop.html" class="flavor__slide" aria-label="Shop Pineapple">
+                            <img src="assets/Can Model 250ml/Pineapple 250ml.png" alt="Pineapple">
+                            <p class="flavor__name">Pineapple</p>
+                        </a>
+                        <a href="shop.html" class="flavor__slide" aria-label="Shop Watermelon">
+                            <img src="assets/Can Model 250ml/Watermelon 250ml.png" alt="Watermelon">
+                            <p class="flavor__name">Watermelon</p>
+                        </a>
+                    </div>
+
+                    <button type="button" class="flavor__arrow" id="flavor-next" aria-label="Next flavor">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--======== FOOTER =============-->
+    <footer class="footer">
+
+        <div class="footer__container container">
+
+            <!-- Call to action -->
+            <div class="footer__cta">
+                <div>
+                    <h2 class="footer__cta-title">Thirsty? Grab your <span>ZipZy</span>.</h2>
+                    <p class="footer__cta-text">Five fruity flavors, ready to brighten your day.</p>
+                </div>
+                <a href="shop.html" class="footer__cta-btn">Shop Now</a>
+                <img src="assets/img/Can Mango.png" alt="" aria-hidden="true" class="footer__cta-img">
+            </div>
+
+            <!-- Brand and links -->
+            <div class="footer__main">
+
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">Zip<span>Zy</span></a>
+                    <p class="footer__tagline">Refreshing fruity flavors in every can, made from natural fruit flavors.</p>
+
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/share/196xiw96qa/" class="footer__social-link" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                        <a href="https://www.instagram.com/zipzy_juice?stkn=Y2xldHRqNWZjNDd2" class="footer__social-link" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="TikTok"><i class="ri-tiktok-line"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <h3 class="footer__title">Explore</h3>
+                    <ul class="footer__list">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="shop.html" class="footer__link">Shop</a></li>
+                        <li><a href="about.html" class="footer__link">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h3 class="footer__title">Need help?</h3>
+                    <ul class="footer__list">
+                        <li><a href="contact.html" class="footer__link">Contact</a></li>
+                        <li><a href="login.html" class="footer__link">Log In</a></li>
+                        <li class="footer__info"><i class="ri-mail-line"></i>ZipyCanJuice@gmail.com</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom bar -->
+            <div class="footer__bottom">
+                <p>&copy; 2026 ZipZy. All rights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!--======== SCRIPTS =============-->
+    <script src="js/script.js"></script>
+</body>
+</html>

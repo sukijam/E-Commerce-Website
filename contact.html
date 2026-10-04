@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | ZipZy</title>
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--======== HEADER =============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+
+            <!-- Logo -->
+            <a href="index.html" class="nav__logo">
+                Zip<span>Zy</span>
+            </a>
+
+            <!-- Menu links -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link">Shop</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link active-link">Contact</a>
+                    </li>
+                </ul>
+
+                <button type="button" class="nav__close" id="nav-close" aria-label="Close menu">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+
+            <!-- Cart, login and menu button -->
+            <div class="nav__actions">
+                <a href="shop.html#cart" class="nav__cart" id="nav-cart" aria-label="Cart, 0 items">
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <span class="nav__cart-count" id="cart-count" data-count="0" aria-live="polite">0</span>
+                </a>
+
+                <a href="login.html" class="nav__login" aria-label="Login">
+                    <i class="ri-user-line"></i>
+                </a>
+
+                <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--======== MAIN =============-->
+    <main class="main">
+        <section class="page">
+            <div class="page__container container">
+
+                <h1 class="page__title">Get in <span>Touch</span></h1>
+                <p class="page__subtitle">Questions or orders? Send us a message and we will reply soon.</p>
+
+                <div class="contact__layout">
+
+                    <!-- contact details (change these to your real details) -->
+                    <div class="contact__info">
+                        <h2 class="contact__heading">Contact Information</h2>
+                        <p class="contact__text">We would love to hear from you. Reach us any time through these details.</p>
+
+                        <ul class="contact__list">
+                            <li class="contact__item">
+                                <span class="contact__icon"><i class="ri-mail-line"></i></span>
+                                <div>
+                                    <h3>Email</h3>
+                                    <p>ZipzyCanJuice@gmail.com</p>
+                                </div>
+                            </li>
+                            <li class="contact__item">
+                                <span class="contact__icon"><i class="ri-phone-line"></i></span>
+                                <div>
+                                    <h3>Phone</h3>
+                                    <p>0953 267 8007</p>
+                                </div>
+                            </li>
+                            <li class="contact__item">
+                                <span class="contact__icon"><i class="ri-map-pin-line"></i></span>
+                                <div>
+                                    <h3>Location</h3>
+                                    <p>The Zipzy Company Manila, Philippines</p>
+                                </div>
+                            </li>
+                            <li class="contact__item">
+                                <span class="contact__icon"><i class="ri-time-line"></i></span>
+                                <div>
+                                    <h3>Open Hours</h3>
+                                    <p>Mon - Sat, 6:00 AM - 6:00 PM</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- message form and thank you message -->
+                    <div class="contact__right">
+
+                        <form class="page__box page__form" id="contact-form">
+                            <h2 class="page__heading">Send a Message</h2>
+
+                            <div class="contact__row">
+                                <div>
+                                    <label for="contact-name">Name</label>
+                                    <input type="text" id="contact-name" placeholder="Juan Dela Cruz" required>
+                                </div>
+                                <div>
+                                    <label for="contact-email">Email</label>
+                                    <input type="email" id="contact-email" placeholder="juan@email.com" required>
+                                </div>
+                            </div>
+
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" rows="6" placeholder="Write your message here" required></textarea>
+
+                            <button type="submit" class="page__btn">Send Message</button>
+                        </form>
+
+                        <!-- Shown after sending (contact.js shows this box) -->
+                        <div class="page__box page__thanks" id="contact-thanks">
+                            <i class="ri-checkbox-circle-line"></i>
+                            <h2>Thank you, <span id="thanks-name"></span>!</h2>
+                            <p>Your message was sent. We will reply soon.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!--======== FOOTER =============-->
+    <footer class="footer">
+
+        <div class="footer__container container">
+
+            <!-- Call to action -->
+            <div class="footer__cta">
+                <div>
+                    <h2 class="footer__cta-title">Thirsty? Grab your <span>ZipZy</span>.</h2>
+                    <p class="footer__cta-text">Five fruity flavors, ready to brighten your day.</p>
+                </div>
+                <a href="shop.html" class="footer__cta-btn">Shop Now</a>
+                <img src="assets/img/Can Mango.png" alt="" aria-hidden="true" class="footer__cta-img">
+            </div>
+
+            <!-- Brand and links -->
+            <div class="footer__main">
+
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">Zip<span>Zy</span></a>
+                    <p class="footer__tagline">Refreshing fruity flavors in every can, made from natural fruit flavors.</p>
+
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/share/196xiw96qa/" class="footer__social-link" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                        <a href="https://www.instagram.com/zipzy_juice?stkn=Y2xldHRqNWZjNDd2" class="footer__social-link" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="TikTok"><i class="ri-tiktok-line"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <h3 class="footer__title">Explore</h3>
+                    <ul class="footer__list">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="shop.html" class="footer__link">Shop</a></li>
+                        <li><a href="about.html" class="footer__link">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h3 class="footer__title">Need help?</h3>
+                    <ul class="footer__list">
+                        <li><a href="contact.html" class="footer__link">Contact</a></li>
+                        <li><a href="login.html" class="footer__link">Log In</a></li>
+                        <li class="footer__info"><i class="ri-mail-line"></i>ZipyCanJuice@gmail.com</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom bar -->
+            <div class="footer__bottom">
+                <p>&copy; 2026 ZipZy. All rights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!--======== SCRIPTS =============-->
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

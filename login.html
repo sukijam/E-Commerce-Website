@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | ZipZy</title>
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--======== HEADER =============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+
+            <!-- Logo -->
+            <a href="index.html" class="nav__logo">
+                Zip<span>Zy</span>
+            </a>
+
+            <!-- Menu links -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="shop.html" class="nav__link">Shop</a>
+                </li>
+                <li class="nav__item">
+                    <a href="about.html" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contact.html" class="nav__link">Contact</a>
+                </li>
+                </ul>
+
+                <button type="button" class="nav__close" id="nav-close" aria-label="Close menu">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+
+            <!-- Cart, login and menu button -->
+            <div class="nav__actions">
+                <a href="shop.html#cart" class="nav__cart" id="nav-cart" aria-label="Cart, 0 items">
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <span class="nav__cart-count" id="cart-count" data-count="0" aria-live="polite">0</span>
+                </a>
+
+                <a href="login.html" class="nav__login" aria-label="Login">
+                    <i class="ri-user-line"></i>
+                </a>
+
+                <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--======== MAIN =============-->
+    <main class="main">
+        <section class="page">
+            <div class="page__container container login">
+
+                <h1 class="page__title">Welcome to <span>ZIPZY</span></h1>
+
+                <a href="index.html" class="back-btn"><i class="ri-arrow-left-line"></i> Back</a>
+
+                <!-- Log in and sign up -->
+                <div id="login-area">
+
+                    <div class="login__tabs">
+                        <button type="button" class="login__tab active" id="tab-login">Log In</button>
+                        <button type="button" class="login__tab" id="tab-signup">Sign Up</button>
+                    </div>
+
+                    <p class="login__error" id="login-error"></p>
+
+                    <!-- Log in form -->
+                    <form class="page__box page__form" id="login-form">
+                        <input type="email" id="login-email" placeholder="Email" required>
+
+                        <input type="password" id="login-password" placeholder="Password" required>
+
+                        <button type="submit" class="page__btn">Log In</button>
+                    </form>
+
+                    <!-- Sign up form -->
+                    <form class="page__box page__form" id="signup-form">
+                        <label for="signup-name">Full Name</label>
+                        <input type="text" id="signup-name" placeholder="Enter your name" required>
+
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" placeholder="Enter your email" required>
+
+                        <label for="signup-password">Password (at least 8 characters)</label>
+                        <input type="password" id="signup-password" placeholder="Create a password" required>
+
+                        <label for="signup-confirm">Confirm Password</label>
+                        <input type="password" id="signup-confirm" placeholder="Type it again" required>
+
+                        <button type="submit" class="page__btn">Create Account</button>
+                    </form>
+
+                </div>
+
+                <!-- Shown when the user is logged in -->
+                <div class="page__box login__welcome" id="login-welcome">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <h2>Hi, <span id="welcome-name"></span>!</h2>
+                    <p>You are logged in.</p>
+                    <a href="shop.html" class="page__btn">Go to Shop</a>
+                    <button type="button" class="login__logout" id="logout-btn">Log Out</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!--======== FOOTER =============-->
+    <footer class="footer">
+
+        <div class="footer__container container">
+
+            <!-- Call to action -->
+            <div class="footer__cta">
+                <div>
+                    <h2 class="footer__cta-title">Thirsty? Grab your <span>ZipZy</span>.</h2>
+                    <p class="footer__cta-text">Five fruity flavors, ready to brighten your day.</p>
+                </div>
+                <a href="shop.html" class="footer__cta-btn">Shop Now</a>
+                <img src="assets/img/Can Mango.png" alt="" aria-hidden="true" class="footer__cta-img">
+            </div>
+
+            <!-- Brand and links -->
+            <div class="footer__main">
+
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">Zip<span>Zy</span></a>
+                    <p class="footer__tagline">Refreshing fruity flavors in every can, made from natural fruit flavors.</p>
+
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/share/196xiw96qa/" class="footer__social-link" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                        <a href="https://www.instagram.com/zipzy_juice?stkn=Y2xldHRqNWZjNDd2" class="footer__social-link" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="TikTok"><i class="ri-tiktok-line"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <h3 class="footer__title">Explore</h3>
+                    <ul class="footer__list">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="shop.html" class="footer__link">Shop</a></li>
+                        <li><a href="about.html" class="footer__link">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h3 class="footer__title">Need help?</h3>
+                    <ul class="footer__list">
+                        <li><a href="contact.html" class="footer__link">Contact</a></li>
+                        <li><a href="login.html" class="footer__link">Log In</a></li>
+                        <li class="footer__info"><i class="ri-mail-line"></i>ZipyCanJuice@gmail.com</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom bar -->
+            <div class="footer__bottom">
+                <p>&copy; 2026 ZipZy. All rights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!--======== SCRIPTS =============-->
+    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | ZipZy</title>
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--======== HEADER =============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+
+            <!-- Logo -->
+            <a href="index.html" class="nav__logo">
+                Zip<span>Zy</span>
+            </a>
+
+            <!-- Menu links -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="shop.html" class="nav__link active-link">Shop</a>
+                </li>
+                <li class="nav__item">
+                    <a href="about.html" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contact.html" class="nav__link">Contact</a>
+                </li>
+                </ul>
+
+                <button type="button" class="nav__close" id="nav-close" aria-label="Close menu">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+
+            <!-- Cart, login and menu button -->
+            <div class="nav__actions">
+                <button type="button" class="nav__cart" id="nav-cart" aria-label="Cart, 0 items">
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <span class="nav__cart-count" id="cart-count" data-count="0" aria-live="polite">0</span>
+                </button>
+
+                <a href="login.html" class="nav__login" aria-label="Login">
+                    <i class="ri-user-line"></i>
+                </a>
+
+                <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--======== MAIN =============-->
+    <main class="main">
+        <section class="shop">
+            <div class="shop__container container">
+
+                <h1 class="shop__title">Pick your <span>ZIPZY</span></h1>
+                <p class="shop__subtitle">Five flavors, 100% natural. Choose 330 ML or 250 ML.</p>
+
+                <div class="shop__grid">
+
+                    <!-- Product 1: Calamansi -->
+                    <article class="shop__card">
+                        <span class="shop__badge">Best Seller</span>
+                        <img src="assets/Can Model 330ml/Calamansi 330ml.png" alt="Zipzy Calamansi can" class="shop__img">
+                        <p class="shop__category">DRINK</p>
+                        <h2 class="shop__name">Calamansi</h2>
+                        <div class="shop__rating"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-half-fill"></i><span>4.5 (60)</span></div>
+                        <div class="shop__sizes">
+                            <button type="button" class="shop__size active" data-price="35" data-img="assets/Can Model 330ml/Calamansi 330ml.png">330 ML</button>
+                            <button type="button" class="shop__size" data-price="25" data-img="assets/Can Model 250ml/Calamansi 250ml.png">250 ML</button>
+                        </div>
+                        <div class="shop__bottom">
+                            <p class="shop__price">₱35</p>
+                            <button type="button" class="shop__button">Add To Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 2: Strawberry -->
+                    <article class="shop__card">
+                        <span class="shop__badge">Fan Favorite</span>
+                        <img src="assets/Can Model 330ml/Strawberry 330ml.png" alt="Zipzy Strawberry can" class="shop__img">
+                        <p class="shop__category">DRINK</p>
+                        <h2 class="shop__name">Strawberry</h2>
+                        <div class="shop__rating"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-half-fill"></i><span>4.6 (80)</span></div>
+                        <div class="shop__sizes">
+                            <button type="button" class="shop__size active" data-price="35" data-img="assets/Can Model 330ml/Strawberry 330ml.png">330 ML</button>
+                            <button type="button" class="shop__size" data-price="25" data-img="assets/Can Model 250ml/Strawberry 250ml.png">250 ML</button>
+                        </div>
+                        <div class="shop__bottom">
+                            <p class="shop__price">₱35</p>
+                            <button type="button" class="shop__button">Add To Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 3: Mango -->
+                    <article class="shop__card">
+                        <span class="shop__badge">Top Rated</span>
+                        <img src="assets/Can Model 330ml/Mango 330ml.png" alt="Zipzy Mango can" class="shop__img">
+                        <p class="shop__category">DRINK</p>
+                        <h2 class="shop__name">Mango</h2>
+                        <div class="shop__rating"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><span>5.0 (90)</span></div>
+                        <div class="shop__sizes">
+                            <button type="button" class="shop__size active" data-price="35" data-img="assets/Can Model 330ml/Mango 330ml.png">330 ML</button>
+                            <button type="button" class="shop__size" data-price="25" data-img="assets/Can Model 250ml/Mango 250ml.png">250 ML</button>
+                        </div>
+                        <div class="shop__bottom">
+                            <p class="shop__price">₱35</p>
+                            <button type="button" class="shop__button">Add To Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 4: Pineapple -->
+                    <article class="shop__card">
+                        <span class="shop__badge">New</span>
+                        <img src="assets/Can Model 330ml/Pineapple 330ml.png" alt="Zipzy Pineapple can" class="shop__img">
+                        <p class="shop__category">DRINK</p>
+                        <h2 class="shop__name">Pineapple</h2>
+                        <div class="shop__rating"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-half-fill"></i><span>4.5 (52)</span></div>
+                        <div class="shop__sizes">
+                            <button type="button" class="shop__size active" data-price="35" data-img="assets/Can Model 330ml/Pineapple 330ml.png">330 ML</button>
+                            <button type="button" class="shop__size" data-price="25" data-img="assets/Can Model 250ml/Pineapple 250ml.png">250 ML</button>
+                        </div>
+                        <div class="shop__bottom">
+                            <p class="shop__price">₱35</p>
+                            <button type="button" class="shop__button">Add To Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 5: Watermelon -->
+                    <article class="shop__card">
+                        <span class="shop__badge">Summer Pick</span>
+                        <img src="assets/Can Model 330ml/Watermelon 330ml.png" alt="Zipzy Watermelon can" class="shop__img">
+                        <p class="shop__category">DRINK</p>
+                        <h2 class="shop__name">Watermelon</h2>
+                        <div class="shop__rating"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-half-fill"></i><span>4.5 (52)</span></div>
+                        <div class="shop__sizes">
+                            <button type="button" class="shop__size active" data-price="35" data-img="assets/Can Model 330ml/Watermelon 330ml.png">330 ML</button>
+                            <button type="button" class="shop__size" data-price="25" data-img="assets/Can Model 250ml/Watermelon 250ml.png">250 ML</button>
+                        </div>
+                        <div class="shop__bottom">
+                            <p class="shop__price">₱35</p>
+                            <button type="button" class="shop__button">Add To Cart</button>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!--======== FLOATING "VIEW CART" BAR =============-->
+    <button type="button" class="cart-bar" id="cart-bar">
+        <img src="assets/Can Model 250ml/Calamansi 250ml.png" alt="" class="cart-bar__img" id="cart-bar-img">
+        <span class="cart-bar__text">
+            <strong>View cart</strong>
+            <small id="cart-bar-count">0 items</small>
+        </span>
+        <span class="cart-bar__arrow"><i class="ri-arrow-right-s-line"></i></span>
+    </button>
+
+    <!--======== CART DRAWER =============-->
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <aside class="cart" id="cart">
+        <div class="cart__header">
+            <h2 class="cart__title">Your Cart</h2>
+            <button type="button" class="cart__close" id="cart-close" aria-label="Close cart">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+
+        <div class="cart__items" id="cart-items"></div>
+
+        <div class="cart__footer">
+            <p class="cart__total">Total: <span id="cart-total">₱0</span></p>
+            <a href="checkout.html" class="cart__checkout">Checkout</a>
+        </div>
+    </aside>
+
+    <!--======== FOOTER =============-->
+    <footer class="footer">
+
+        <div class="footer__container container">
+
+            <!-- Call to action -->
+            <div class="footer__cta">
+                <div>
+                    <h2 class="footer__cta-title">Thirsty? Grab your <span>ZipZy</span>.</h2>
+                    <p class="footer__cta-text">Five fruity flavors, ready to brighten your day.</p>
+                </div>
+                <a href="shop.html" class="footer__cta-btn">Shop Now</a>
+                <img src="assets/img/Can Mango.png" alt="" aria-hidden="true" class="footer__cta-img">
+            </div>
+
+            <!-- Brand and links -->
+            <div class="footer__main">
+
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">Zip<span>Zy</span></a>
+                    <p class="footer__tagline">Refreshing fruity flavors in every can, made from natural fruit flavors.</p>
+
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/share/196xiw96qa/" class="footer__social-link" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                        <a href="https://www.instagram.com/zipzy_juice?stkn=Y2xldHRqNWZjNDd2" class="footer__social-link" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="TikTok"><i class="ri-tiktok-line"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <h3 class="footer__title">Explore</h3>
+                    <ul class="footer__list">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="shop.html" class="footer__link">Shop</a></li>
+                        <li><a href="about.html" class="footer__link">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h3 class="footer__title">Need help?</h3>
+                    <ul class="footer__list">
+                        <li><a href="contact.html" class="footer__link">Contact</a></li>
+                        <li><a href="login.html" class="footer__link">Log In</a></li>
+                        <li class="footer__info"><i class="ri-mail-line"></i>ZipyCanJuice@gmail.com</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom bar -->
+            <div class="footer__bottom">
+                <p>&copy; 2026 ZipZy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--======== SCRIPTS =============-->
+    <script src="js/script.js"></script>
+</body>
+</html>
